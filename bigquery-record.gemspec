@@ -5,7 +5,7 @@ require 'bigquery/record/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "bigquery-record"
-  spec.version       = Bigquery::Record::VERSION
+  spec.version       = BigQueryRecord::VERSION
   spec.authors       = ["Jun Sitow"]
   spec.email         = ["mottipok@gmail.com"]
 
