@@ -1,12 +1,8 @@
-# Bigquery::Record
+# BigQueryRecord
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bigquery/record`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+BigQueryRecord ORM!
 
 ## Installation
-
-Add this line to your application's Gemfile:
 
 ```ruby
 gem 'bigquery-record'
@@ -22,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+export BIGQUERY_RECORD_PROJECT="your_project_name"
+export BIGQUERY_RECORD_DATASET="test"
+export BIGQUERY_RECORD_EMAIL="you@developer.gserviceaccount.com"
+export BIGQUERY_KEY_PATH="/path/to/your_key.p12"
+```
+
+```ruby
+class ActionLog < BigQueryRecord::Base
+  enum action_type: { login: 1, sell_item: 2 }
+end
+```
 
 ## Development
 
